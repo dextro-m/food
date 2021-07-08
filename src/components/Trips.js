@@ -109,7 +109,7 @@ function Trips() {
 
   const getTripsList = () => {
     const tripList = []
-    const trips
+    const trips = 0
 
     return tripList
   }
