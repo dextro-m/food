@@ -85,7 +85,7 @@ function Trips() {
   {site.siteMetadata.title}
   */
 
-  const { data } = useStaticQuery(graphql`
+  const data2 = useStaticQuery(graphql`
     query TripsQuery {
       allTripsJson {
         edges {
@@ -104,8 +104,10 @@ function Trips() {
     }
   `)
 
-  //const footerData = data.allTripsJson.edges.node
+  //const footerData = data2.allTripsJson.edges.node.alt
+
   //const Trips = () => {
+  console.log({ data2 })
 
   const getTripsList = () => {
     const tripList = []

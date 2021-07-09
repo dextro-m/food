@@ -10,6 +10,7 @@ const Doggy = () => {
             alt
             button
             name
+            id
             img {
               childImageSharp {
                 gatsbyImageData(layout: CONSTRAINED)
@@ -25,7 +26,10 @@ const Doggy = () => {
   return (
     <>
       {data.allTripsJson.edges.map(edge => (
-        <div key={edge.id}>{edge.node.name}</div>
+        <div key={edge.node.id}>
+          {edge.node.name}
+          {edge.node.id}
+        </div>
       ))}
     </>
   )
