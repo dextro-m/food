@@ -1,5 +1,7 @@
+/*
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+
 
 const Doggy = () => {
   const data = useStaticQuery(graphql`
@@ -36,3 +38,5 @@ const Doggy = () => {
 }
 
 export default Doggy
+
+*/

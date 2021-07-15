@@ -1,13 +1,19 @@
+/*
+
 import React from "react"
 import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+
+
 
 //This was to call the hook, but is not required
 //import { useTripsData } from "../hooks/useTripsData"
 
 //To use gatsby image make .json file
 //to export via graphql
+
+
 
 const Trips = () => {
   const data = useStaticQuery(graphql`
@@ -50,7 +56,7 @@ const Trips = () => {
   return (
     <ProductContainer>
       <ProductsHeading>Heading</ProductsHeading>
-      {/*<ProductWrapper>{getTrips(data)}</ProductWrapper>*/}
+      <ProductWrapper>{getTrips(data)}</ProductWrapper>
       {data.allTripsJson.edges.map(({ node }) => (
         <div key={node.id}>
           {node.name}
@@ -62,8 +68,10 @@ const Trips = () => {
   )
 }
 
+
+
 //This was the way i done it before, but can map through ({ node }) instead
-/*
+
 <ProductContainer>
 <ProductsHeading>Heading</ProductsHeading>
 <ProductWrapper>{getTrips(data)}</ProductWrapper>
@@ -76,7 +84,7 @@ const Trips = () => {
 <GatsbyImage image={image} />
 </ProductContainer>
 
-*/
+
 
 // This is the styling  for the component using 'styled components'
 const ProductContainer = styled.div`
@@ -96,3 +104,5 @@ const ProductsHeading = styled.div`
 const ProductWrapper = styled.div``
 
 export default Trips
+
+*/

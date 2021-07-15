@@ -1,7 +1,7 @@
 import * as React from "react"
 import GlobalStyle from "../styles/GlobalStyles"
 import Header from "./Header"
-import Doggy from "./Doggy"
+// import Doggy from "./Doggy"
 
 const Layout = ({ children }) => {
   return (
@@ -9,9 +9,10 @@ const Layout = ({ children }) => {
       <GlobalStyle />
       <Header />
       <main>{children}</main>
-      <Doggy />
     </>
   )
 }
 
 export default Layout
+
+// <Doggy />
