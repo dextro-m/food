@@ -1,3 +1,4 @@
+/*
 import React from "react"
 import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
@@ -75,7 +76,7 @@ const Trips = () => {
 <GatsbyImage image={image} />
 </ProductContainer>
 
-*/
+
 
 // This is the styling  for the component using 'styled components'
 const ProductContainer = styled.div`
@@ -95,3 +96,5 @@ const ProductsHeading = styled.div`
 const ProductWrapper = styled.div``
 
 export default Trips
+
+*/
