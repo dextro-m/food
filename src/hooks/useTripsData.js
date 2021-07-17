@@ -1,3 +1,4 @@
+/*
 import { useStaticQuery, graphql } from "gatsby"
 
 export const useTripsData = () => {
@@ -25,3 +26,4 @@ export const useTripsData = () => {
 
   return allTripsJson.edges.node
 }
+*/

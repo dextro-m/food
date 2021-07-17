@@ -2,6 +2,8 @@ import React from "react"
 import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { Button } from "./Button"
+import { ImLocation } from "react-icons/im"
 
 //To use gatsby image make .json file
 //to export via graphql
@@ -26,21 +28,27 @@ const Trips = () => {
       }
     }
   `)
-  console.log({ data }) //check the data
+  console.log({ data }) //check the data on console
 
   //This function, getTrips(data), loops through the data and stores it in the tripsArray,
   // call the function {getTrips(data)} in the return section.
-  //It achieves same result as the code in the return section mapping through the data
 
   function getTrips(data) {
     const tripsArray = []
 
-    data.allTripsJson.edges.forEach((item, index) => {
+    data.allTripsJson.edges.forEach(({ node }) => {
       tripsArray.push(
-        <div key={index}>
-          {item.node.name}
-          <GatsbyImage image={getImage(item.node.img)} />
-        </div>
+        <ProductCard key={node.id}>
+          {node.name}
+          <GatsbyImage image={getImage(node.img)} alt={node.alt} />
+          <ProductInfo>
+            <TextWrap>
+              <ImLocation />
+              <ProductTitle>{node.name}</ProductTitle>
+            </TextWrap>
+            <Button to="/trips">{node.button}</Button>
+          </ProductInfo>
+        </ProductCard>
       )
     })
     return tripsArray
@@ -49,6 +57,13 @@ const Trips = () => {
   return (
     <ProductContainer>
       <ProductsHeading>Heading</ProductsHeading>
+      <ProductWrapper>{getTrips(data)}</ProductWrapper>
+    </ProductContainer>
+  )
+}
+
+//This was the way I was doing it before, but now using getTrips function
+/*
       <ProductWrapper>Wrapper{getTrips(data)}</ProductWrapper>
       {data.allTripsJson.edges.map(({ node }) => (
         <div key={node.id}>
@@ -58,22 +73,6 @@ const Trips = () => {
         </div>
       ))}
     </ProductContainer>
-  )
-}
-
-//This was the way i done it before, but can map through ({ node }) instead
-/*
-<ProductContainer>
-<ProductsHeading>Heading</ProductsHeading>
-<ProductWrapper>{getTrips(data)}</ProductWrapper>
-{data.allTripsJson.edges.map(edge => (
-  <div key={edge.node.id}>
-    {edge.node.name}
-    {edge.node.id}
-  </div>
-))}
-<GatsbyImage image={image} />
-</ProductContainer>
 
 */
 
@@ -92,6 +91,17 @@ const ProductsHeading = styled.div`
   color: #000;
 `
 
-const ProductWrapper = styled.div``
+const ProductWrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+`
+
+const ProductCard = styled.div``
+
+const ProductInfo = styled.div``
+
+const TextWrap = styled.div``
+
+const ProductTitle = styled.div``
 
 export default Trips
