@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Marlo Nel <marlo.nel@megnel.com>",
   "dependencies": {
+    "@fontsource/roboto": "^4.5.0",
     "babel-plugin-styled-components": "^1.13.1",
     "gatsby": "^3.6.2",
     "gatsby-plugin-gatsby-cloud": "^2.6.1",

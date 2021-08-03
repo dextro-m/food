@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import { Button } from "./Button"
+import { Button } from "./button"
 import { ImLocation } from "react-icons/im"
 
 //To use gatsby image make .json file

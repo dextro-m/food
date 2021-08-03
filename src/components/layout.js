@@ -1,7 +1,6 @@
 import * as React from "react"
 import GlobalStyle from "../styles/GlobalStyles"
-import Header from "./Header"
-// import Doggy from "./Doggy"
+import Header from "./header"
 
 const Layout = ({ children }) => {
   return (
@@ -14,5 +13,3 @@ const Layout = ({ children }) => {
 }
 
 export default Layout
-
-// <Doggy />
