@@ -1,4 +1,4 @@
-Copyright (c) 2021 Marlo Nel.
+Copyright © 2021 Marlo Nel.
 
 NO LICENSE IS PROVIDED.
 
