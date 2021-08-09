@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Under Maintenance`,
+    title: `Megnel`,
     description: `This is an "Under Maintenance" placeholder website for Megnel technologies`,
     author: `Marlo Nel`,
   },
@@ -21,8 +21,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Website-Under-Maintenance`,
+        short_name: `UnderMaintenance`,
         start_url: `/`,
         background_color: `#060e2a`,
         theme_color: `#2e2e2e`,

@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components"
+import "@fontsource/roboto"
 
 const GlobalStyle = createGlobalStyle`
 
@@ -11,7 +12,6 @@ body {
 }
 
 * {
-    
     margin: 0;
     padding: 0ex;
     box-sizing: border-box;
