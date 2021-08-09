@@ -4,6 +4,7 @@ import Seo from "../components/seo"
 import styled from "styled-components"
 import "@fontsource/jetbrains-mono"
 import { Link } from "gatsby"
+import { DiAndroid } from "react-icons/di"
 
 const NotFoundPage = () => (
   <Layout>
@@ -11,10 +12,12 @@ const NotFoundPage = () => (
     <Container>
       <FlexHeading>
         <Heading>404: ERROR</Heading>
+        <Droid />
         <Text>
           This is not the page you are looking for.
           <br />
-          Move along...
+          <br />
+          Move along, &nbsp;
           <br />
           Move along...
           <br />
@@ -51,24 +54,18 @@ const FlexHeading = styled.div`
     margin-top: 5vh;
   }
 `
-const FlexImage = styled.div`
-  margin-top: 5vh;
-  max-width: 50%;
-  //outline: solid 2px red;
 
-  @media (min-width: 800px) {
-    max-width: 28%;
-    margin-top: -6vh;
-    order: 3; //move to RH side of screen
-  }
+const Droid = styled(DiAndroid)`
+  display: block;
+  font-size: clamp(2.5rem, 5.4vw, 6.5rem);
+  margin: 1.3rem auto;
 `
+
 const FlexText = styled.div`
   text-align: center;
   max-width: 100%;
   margin-top: 1vh;
-
   //outline: solid 2px red; //red border: ;
-
   @media (min-width: 800px) {
     max-width: 65%;
     margin-top: -4vh;
