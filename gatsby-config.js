@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Megnel`,
-    description: `This is an "Under Maintenance" placeholder website for Megnel technologies`,
+    description: `Megnel Technologies - ...`,
     author: `Marlo Nel`,
   },
   plugins: [

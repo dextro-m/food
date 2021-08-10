@@ -9,8 +9,8 @@ import { DiAndroid } from "react-icons/di"
 const NotFoundPage = () => (
   <Layout>
     <Seo title="404: Not found" />
-    <Container>
-      <FlexHeading>
+    <FlexContainer>
+      <FlexContent>
         <Heading>404: ERROR</Heading>
         <Droid />
         <Text>
@@ -23,12 +23,12 @@ const NotFoundPage = () => (
           <br />
           <HomeLink to="/">Ok, I'll move along {">>>"}</HomeLink>
         </Text>
-      </FlexHeading>
-    </Container>
+      </FlexContent>
+    </FlexContainer>
   </Layout>
 )
 
-const Container = styled.section`
+const FlexContainer = styled.section`
   height: calc(100vh - 140px);
   overflow: auto;
   display: flex;
@@ -44,7 +44,7 @@ const Container = styled.section`
   }
 `
 
-const FlexHeading = styled.div`
+const FlexContent = styled.div`
   text-align: center;
   max-width: 100%;
   margin-top: 6.5vh;
@@ -61,19 +61,7 @@ const Droid = styled(DiAndroid)`
   margin: 1.3rem auto;
 `
 
-const FlexText = styled.div`
-  text-align: center;
-  max-width: 100%;
-  margin-top: 1vh;
-  //outline: solid 2px red; //red border: ;
-  @media (min-width: 800px) {
-    max-width: 65%;
-    margin-top: -4vh;
-  }
-`
-
-const Heading = styled.h1`
-  //font-family: "JetBrains mono";
+const Heading = styled.h1`  
   font-size: clamp(3rem, 5.4vw, 6.5rem);
   font-weight: 600;
   margin-bottom: 1.2vh;
