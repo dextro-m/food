@@ -21,8 +21,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Website-Under-Maintenance`,
-        short_name: `UnderMaintenance`,
+        name: `Megnel-Technologies`,
+        short_name: `MegnelTech`,
         start_url: `/`,
         background_color: `#060e2a`,
         theme_color: `#2e2e2e`,
