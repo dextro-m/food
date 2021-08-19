@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { Button } from "./button"
 import { StaticImage } from "gatsby-plugin-image"
 
-//This component
+//This component form the main section
 
 const Hero = () => {
   return (
