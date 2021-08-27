@@ -11,7 +11,7 @@ const Footer = () => {
 
 export default Footer
 
-const FooterStyles = styled.nav`
+const FooterStyles = styled.footer`
   display: flex;
   height: 50px;
   align-items: center;
@@ -21,5 +21,7 @@ const FooterStyles = styled.nav`
   font-size: 0.7rem;
   justify-content: center;
   max-width: 1024px;
+  //z-index: 50;
+  position: relative; //This makes the footer visible over the Hero Image
   //border: solid 2px blue;
 `

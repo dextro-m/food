@@ -24,6 +24,7 @@ const NavBar = styled.nav`
   background: transparent;
   max-width: 1024px;
   height: 90px;
+  z-index: 1;
   //border: solid 2px blue;
 `
 
@@ -32,6 +33,7 @@ const NavLink = styled(Link)`
   padding: 0 1rem;
   max-width: 180px; //increase or decrease Logo size
   cursor: pointer;
+  z-index: 1;
 `
 
 export default Header

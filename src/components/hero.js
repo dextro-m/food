@@ -2,12 +2,16 @@ import React from "react"
 import styled from "styled-components"
 import { Button } from "./button"
 import { StaticImage } from "gatsby-plugin-image"
+import Video from "../videos/tech.mp4"
 
-//This component form the main section
+//This component forms the main Hero section
 
 const Hero = () => {
   return (
     <Container>
+      <HeroBg>
+        <VideoBg src={Video} type="video/mp4" autoPlay loop muted playsInline />
+      </HeroBg>
       <FlexHeading>
         <Heading>Coming Soon...</Heading>
       </FlexHeading>
@@ -39,6 +43,7 @@ const Container = styled.section`
   align-items: center;
   justify-content: flex-start;
   margin: 0 auto;
+
   //border: solid 2px red;
 
   @media (min-width: 800px) {
@@ -49,11 +54,30 @@ const Container = styled.section`
     flex-wrap: wrap;
   }
 `
+const HeroBg = styled.div`
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: 0;
+`
+
+const VideoBg = styled.video`
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+`
 
 const FlexHeading = styled.div`
   text-align: center;
   max-width: 100%;
   margin-top: 6.5vh;
+  z-index: 1;
   //outline: solid 2px red; //red border: ;
   @media (min-width: 800px) {
     min-width: 80%;
@@ -75,6 +99,7 @@ const FlexText = styled.div`
   text-align: center;
   max-width: 100%;
   margin-top: 6vh;
+  z-index: 1;
 
   //outline: solid 2px red; //red border: ;
 

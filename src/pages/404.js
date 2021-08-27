@@ -61,7 +61,7 @@ const Droid = styled(DiAndroid)`
   margin: 1.3rem auto;
 `
 
-const Heading = styled.h1`  
+const Heading = styled.h1`
   font-size: clamp(3rem, 5.4vw, 6.5rem);
   font-weight: 600;
   margin-bottom: 1.2vh;
