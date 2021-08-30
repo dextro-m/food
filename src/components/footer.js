@@ -21,7 +21,7 @@ const FooterStyles = styled.footer`
   font-size: 0.7rem;
   justify-content: center;
   max-width: 1024px;
-  //z-index: 50;
-  position: relative; //This makes the footer visible over the Hero Image
+  //z-index: -1;
+  //position: relative; //This makes the footer visible over the Hero Image
   //border: solid 2px blue;
 `
