@@ -1,20 +1,25 @@
 import React from "react"
 import styled from "styled-components"
 import { Button } from "./button"
-
-import { useStaticQuery, graphql } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image"
+import Video from "../videos/tech.mp4"
 
 //This component forms the main Hero section
 
 const Hero = () => {
-  //console.log(data.allFile.edges.node.id)
-
-  //const image = getImage(data.allFile.edges.node)
-
   return (
     <Container>
-      <HeroBg></HeroBg>
+      <HeroBg>
+        <StaticImage
+          src="../images/heroBg.jpg"
+          alt="Fresh Meat"
+          layout="constrained"
+
+          //height={2000}
+          //objectFit="contain"
+          //fit="cover"
+        />
+      </HeroBg>
       <FlexHeading>
         <Heading>Sir Loin</Heading>
         <h2>EST 1607</h2>
@@ -69,24 +74,24 @@ const Container = styled.section`
     flex-wrap: wrap;
   }
 `
-const HeroBg = styled.div`
+const HeroBg = styled.image`
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100vh;
-  max-width: 100%;
+  //height: 100vh;
+  //max-width: 100%;
   overflow: hidden;
   z-index: 0;
   border: solid 2px red;
 `
 
-const BgImage = styled(GatsbyImage)`
+const FlexImage = styled(StaticImage)`
   height: 100%;
   max-width: 100%;
   position: relative;
-  z-index: 50;
+  z-index: 10;
 `
 
 const FlexHeading = styled.div`
