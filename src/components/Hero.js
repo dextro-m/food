@@ -8,7 +8,7 @@ import { BgImage } from "gbimage-bridge"
 // and getImage function.
 //The BgImage has a className="masthead" that can be styled
 
-const Hero = () => {
+const Herobg = () => {
   const { placeholderImage } = useStaticQuery(
     graphql`
       query {
@@ -31,30 +31,93 @@ const Hero = () => {
   return (
     <>
       <HeroContainer>
-        <BgImage image={pluginImage} className="masthead">
-          <h1>Test234</h1>
-        </BgImage>
+        <BgImage image={pluginImage} className="masthead" />
+        <HeroContent>
+          <h1>Hello</h1>
+        </HeroContent>
       </HeroContainer>
     </>
   )
 }
 
 const HeroContainer = styled.section`
-  position: absolute;
+  position: relative;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-
+  //z-index: -1;
   display: flex;
-  align-items: center;
-  text-align: center;
   justify-content: center;
+  align-items: center;
+
+  //This is overlay over image to darken it
+  :before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 100vh;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.6) 100%
+      ),
+      linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+  }
 
   .masthead {
     width: 100%;
     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    h1 {
+      text-align: center;
+      color: white;
+    }
   }
 `
 
-export default Hero
+const HeroContent = styled.div`
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  position: absolute;
+
+  z-index: 5;
+`
+
+export default Herobg
+
+/* 
+// This way does not work properly, the "Hello" was still covered 
+// by the grey overlay, z-index: 50 did not work.
+
+<>
+<HeroContainer>
+  <BgImage image={pluginImage} className="masthead">
+    <HeroContent>
+      <h1>Hello</h1>
+    </HeroContent>
+  </BgImage>
+</HeroContainer>
+</>
+
+
+// The solution is to not wrap the HeroContent with the BGImage.
+<>
+      <HeroContainer>
+        <BgImage image={pluginImage} className="masthead" />
+        <HeroContent>
+          <h1>Hello</h1>
+        </HeroContent>
+      </HeroContainer>
+    </>
+
+*/
