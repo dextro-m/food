@@ -33,7 +33,8 @@ const Herobg = () => {
       <HeroContainer>
         <BgImage image={pluginImage} className="masthead" />
         <HeroContent>
-          <h1>Hello</h1>
+          <h1>Sir Loin</h1>
+          <h2>Steakhouse</h2>
         </HeroContent>
       </HeroContainer>
     </>
