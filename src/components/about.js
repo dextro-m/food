@@ -9,38 +9,33 @@ import { Link } from "gatsby"
 const About = () => {
   return (
     <Container>
-      <FlexHeading>
-        <Heading>Coming Soon...</Heading>
-      </FlexHeading>
-
-      <FlexImage>
-        <StaticImage
-          src="../images/under.png"
-          alt="Under Construction"
-          layout="constrained"
-        />
-      </FlexImage>
-      <FlexText>
-        <Text>
-          Website currently undergoing maintenance
-          <br />
-          Please check back later!
-        </Text>
-        <ContactBtn href="mailto:info@megnel.com">Contact Us</ContactBtn>
-      </FlexText>
+      <h1>Our Story Started...</h1>
+      <p>
+        Legend has it, that in the early 1600s William John Loin started the
+        very first steakhouse in Warwick, England. News of this magnificent
+        establishment travelled across England and Europe. King James I
+        dispatched his most loyal messenger to investigate. Upon his return, he
+        recounted details of the most succulent tender aged steaks, crunchy beer
+        battered fries and hefty mugs overflowing with crisp golden Ales. The
+        King immediately set off on a perilous journey to discover this for
+        himself. Upon finishing a lavish banquet, the King sent for William and
+        knighted him “Arise, Sir Loin”. Today we carry on with this tradition,
+        using only the freshest ingredients to bring you the finest meals, still
+        fit for a King.
+      </p>
     </Container>
   )
 }
 
 const Container = styled.section`
-  height: calc(100vh - 140px);
+  height: calc(50vh);
   overflow: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   margin: 0 auto;
-  //border: solid 2px red;
+  border: solid 2px red;
 
   @media (min-width: 800px) {
     max-width: 1024px;
@@ -49,58 +44,18 @@ const Container = styled.section`
     align-items: flex-start;
     flex-wrap: wrap;
   }
-`
-
-const FlexHeading = styled.div`
-  text-align: center;
-  max-width: 100%;
-  margin-top: 6.5vh;
-  //outline: solid 2px red; //red border: ;
-  @media (min-width: 800px) {
-    min-width: 80%;
-    margin-top: 5vh;
+  h1 {
+    text-align: center;
+    max-width: 100%;
+    margin-top: 6.5vh;
+    outline: solid 2px red; //red border: ;
+    font-size: clamp(3rem, 5vw, 6rem);
+    font-weight: 600;
   }
-`
-const FlexImage = styled.div`
-  margin-top: 5vh;
-  max-width: 50%;
-  //outline: solid 2px red;
-
-  @media (min-width: 800px) {
-    max-width: 28%;
-    margin-top: -6vh;
-    order: 3; //move to RH side of screen
-  }
-`
-const FlexText = styled.div`
-  text-align: center;
-  max-width: 100%;
-  margin-top: 6vh;
-
-  //outline: solid 2px red; //red border: ;
-
-  @media (min-width: 800px) {
-    max-width: 65%;
-    margin-top: -4vh;
-  }
-`
-
-const Heading = styled.h1`
-  font-size: clamp(3rem, 5.4vw, 6.5rem);
-  font-weight: 600;
-`
-
-const Text = styled.p`
-  font-size: clamp(1.1rem, 3.1vw, 2.1rem);
-  line-height: 1.5; //adds space inbetween text lines
-  white-space: no-wrap;
-`
-const ContactBtn = styled(Button)`
-  position: relative;
-  top: 15px;
-  @media (min-width: 700px) {
-    padding: 0.7em 1.5em;
-    font-size: 1.3rem;
+  p {
+    justify-content: center;
+    text-align: justify;
+    padding: 0 3rem;
   }
 `
 

@@ -34,6 +34,8 @@ module.exports = {
         theme_color: `#2e2e2e`,
         display: `minimal-ui`,
         icon: `src/images/logo.png`, // This path is relative to the root of the site.
+        // This icon should be square, a warining is generated in the console at
+        // dev build time if not square.
       },
     },
 
