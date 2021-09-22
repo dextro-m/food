@@ -56,8 +56,6 @@ const Gallery = () => {
   )
 }
 
-export default Gallery
-
 const Container = styled.div`
   width: 100%auto;
   min-height: 50vh;
@@ -67,3 +65,4 @@ const Container = styled.div`
 const FoodImage = styled(GatsbyImage)`
   max-height: 50vh;
 `
+export default Gallery
