@@ -15,7 +15,6 @@ const About = () => {
           childImageSharp {
             gatsbyImageData(
               layout: CONSTRAINED
-
               quality: 50
               webpOptions: { quality: 70 }
             )

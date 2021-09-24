@@ -37,7 +37,7 @@ const Gallery = () => {
 
   return (
     <Container>
-      <h1>Test</h1>
+      <h1>Gallery</h1>
 
       <Carousel>
         {data.allFile.edges.map(({ node }) => (
@@ -48,7 +48,7 @@ const Gallery = () => {
             />
           </Carousel.Item>
           // .substring(1) removes the 1st character of the
-          // image file name .split(".")[0] remove the . and jpg
+          // image file name .split(".")[0] removes the . and jpg
           //<p>{node.base.substring(1).split(".")[0]}</p>
         ))}
       </Carousel>
