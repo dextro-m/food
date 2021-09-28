@@ -2,7 +2,8 @@ import React from "react"
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs"
 import "react-tabs/style/react-tabs.css"
 import styled from "styled-components"
-import { LunchData } from "../data/LunchData"
+//import { LunchData } from "../data/LunchData"
+import LunchMenu from "./MenuLunch"
 
 const Menu = () => {
   return (
@@ -18,17 +19,7 @@ const Menu = () => {
           <Tab>Kids</Tab>
         </TabList>
         <TabPanel>
-          <Wrapper>
-            {LunchData.map((item, index) => {
-              return (
-                <LunchBox key={index}>
-                  <Title>{item.title}</Title>
-                  <Description>{item.desc}</Description>
-                  <Price>{item.price}</Price>
-                </LunchBox>
-              )
-            })}
-          </Wrapper>
+          <LunchMenu />
           <h2>Any Content 1</h2>
         </TabPanel>
         <TabPanel>
