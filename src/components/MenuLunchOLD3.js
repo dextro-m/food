@@ -6,7 +6,9 @@ import styled from "styled-components"
 const LunchMenu = () => {
   const data = useStaticQuery(graphql`
     query {
-      allLunchDataJson {
+      allLunchDataJson(
+        filter: { Ribs: { elemMatch: { desc: { regex: "" } } } }
+      ) {
         edges {
           node {
             id

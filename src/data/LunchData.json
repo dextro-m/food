@@ -1,19 +1,5 @@
 [
   {
-    "Steaks": [
-      {
-        "name": "Eye Fillet",
-        "desc": "300gm eye fillet",
-        "price": "$56.20"
-      },
-      {
-        "name": "Rib Eye",
-        "desc": "350gm Ribeye",
-        "price": "$46.20"
-      }
-    ]
-  },
-  {
     "Ribs": [
       {
         "name": "Whole Pork Ribs",
@@ -22,21 +8,6 @@
       },
       {
         "name": "Rack of Lamb",
-        "desc": "400g Full Rack",
-        "price": "$46.20"
-      }
-    ]
-  },
-
-  {
-    "Salad": [
-      {
-        "name": "Whole Salad",
-        "desc": "500gm Full Rack",
-        "price": "$56.20"
-      },
-      {
-        "name": "Rack Salad",
         "desc": "400g Full Rack",
         "price": "$46.20"
       }

@@ -4,6 +4,7 @@ import "react-tabs/style/react-tabs.css"
 import styled from "styled-components"
 //import { LunchData } from "../data/LunchData"
 import LunchMenu from "./MenuLunch"
+import MenuDinner from "./MenuDinner"
 
 const Menu = () => {
   return (
@@ -23,6 +24,7 @@ const Menu = () => {
           <h2>Any Content 1</h2>
         </TabPanel>
         <TabPanel>
+          <MenuDinner />
           <h2>Any Content 2</h2>
         </TabPanel>
       </Tabs>
