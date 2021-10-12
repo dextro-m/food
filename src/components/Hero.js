@@ -76,11 +76,6 @@ const HeroContainer = styled.section`
     display: flex;
     align-items: center;
     text-align: center;
-
-    h1 {
-      text-align: center;
-      color: white;
-    }
   }
 `
 
@@ -88,10 +83,13 @@ const HeroContent = styled.div`
   display: flex;
   align-items: center;
   text-align: center;
-
   position: absolute;
-
   z-index: 5;
+
+  h1 {
+    text-align: center;
+    color: white;
+  }
 `
 
 export default Herobg

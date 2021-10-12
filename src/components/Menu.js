@@ -5,6 +5,8 @@ import styled from "styled-components"
 //import { LunchData } from "../data/LunchData"
 import LunchMenu from "./MenuLunch"
 import MenuDinner from "./MenuDinner"
+import DinnerSteak from "./DinnerSteak"
+import DinnerEntree from "./DinnerEntree"
 
 const Menu = () => {
   return (
@@ -24,8 +26,12 @@ const Menu = () => {
           <h2>Any Content 1</h2>
         </TabPanel>
         <TabPanel>
-          <MenuDinner />
-          <h2>Any Content 2</h2>
+          <Wrapper>
+            <MenuDinner />
+            <h2>Any Content 2</h2>
+            <DinnerSteak className="steak" />
+            <DinnerEntree classname="entree" />
+          </Wrapper>
         </TabPanel>
       </Tabs>
     </Container>
