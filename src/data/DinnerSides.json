@@ -1,0 +1,20 @@
+{
+  "title": "Sides",
+  "content": [
+    {
+      "name": "Beer Battered Fries",
+      "desc": "Punnet of fries with Aioli",
+      "price": "$8.40"
+    },
+    {
+      "name": "Caesar salad",
+      "desc": "Baby Cos, pecorino cheese, creamy Dijon mustard ",
+      "price": "$12.80"
+    },
+    {
+      "name": "Roast potatoes",
+      "desc": "Classic roast potatoes with sea salt",
+      "price": "$7.80"
+    }
+  ]
+}

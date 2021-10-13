@@ -4,9 +4,9 @@ import "react-tabs/style/react-tabs.css"
 import styled from "styled-components"
 //import { LunchData } from "../data/LunchData"
 import LunchMenu from "./MenuLunch"
-import MenuDinner from "./MenuDinner"
 import DinnerSteak from "./DinnerSteak"
 import DinnerEntree from "./DinnerEntree"
+import DinnerSides from "./DinnerSides"
 
 const Menu = () => {
   return (
@@ -27,10 +27,9 @@ const Menu = () => {
         </TabPanel>
         <TabPanel>
           <Wrapper>
-            <MenuDinner />
-            <h2>Any Content 2</h2>
-            <DinnerSteak className="steak" />
-            <DinnerEntree classname="entree" />
+            <DinnerSteak />
+            <DinnerEntree />
+            <DinnerSides />
           </Wrapper>
         </TabPanel>
       </Tabs>
@@ -54,6 +53,11 @@ const Wrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   grid-gap: 10px;
+  //color: blue;
+  h2 {
+    //font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+    //color: blue;
+  }
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
   }
@@ -70,8 +74,5 @@ const Title = styled.p`
   font-size: clamp(1rem, 2.5vw, 1.5rem);
   margin-bottom: 0%.5rem;
 `
-
-const Description = styled.p``
-const Price = styled.p``
 
 export default Menu
