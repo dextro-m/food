@@ -1,13 +1,13 @@
 import React from "react"
-import EntreeData from "../data/DinnerEntree.json"
+import SpecialData from "../data/DinnerSpecial.json"
 import MenuStyle from "../styles/MenuStyles"
 
-const DinnerEntree = () => {
+const DinnerSpecial = () => {
   return (
     <MenuStyle>
-      <h2>{EntreeData.title}</h2>
+      <h2>{SpecialData.title}</h2>
       <ul>
-        {EntreeData.content.map((data, index) => (
+        {SpecialData.content.map((data, index) => (
           <li key={`content_item_${index}`}>
             <h3 className="name">
               {data.name}
@@ -21,4 +21,4 @@ const DinnerEntree = () => {
   )
 }
 
-export default DinnerEntree
+export default DinnerSpecial

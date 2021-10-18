@@ -1,14 +1,9 @@
 {
-  "title": "Entrees",
+  "title": "Starters",
   "content": [
     {
-      "name": "Crispy Calamari",
-      "desc": "Lemon pepper deep fried with garlic Aioli",
-      "price": "$14.80"
-    },
-    {
-      "name": "Bluff Oysters",
-      "desc": "Fresh Bluff Oysters with lemon and salt",
+      "name": "Antipasto Platter",
+      "desc": "Selection of cured meats, cheeses, olives and tomatoes",
       "price": "$22.40"
     },
     {
@@ -20,6 +15,11 @@
       "name": "Beef and Chimichurri Pintxos",
       "desc": "Cripsy potatoes with beef, mayo and spicy herb sauce",
       "price": "$13.40"
+    },
+    {
+      "name": "Garlic Chiabata",
+      "desc": "Garlic butter on a toasted Chiabata loaf",
+      "price": "$9.80"
     }
   ]
 }

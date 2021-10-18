@@ -1,0 +1,25 @@
+{
+  "title": "Dessert",
+  "content": [
+    {
+      "name": "Rack of Lamb",
+      "desc": "Hawkes Bay lamb rack 250g/500g",
+      "price": "$25.40/$43.80"
+    },
+    {
+      "name": "Crayfish",
+      "desc": "Grade A Fiordland Crayfish half/whole",
+      "price": "$75.80/$145.70"
+    },
+    {
+      "name": "Kingfish",
+      "desc": "Bay of Island Kingfish",
+      "price": "$32.50"
+    },
+    {
+      "name": "The King's Burger",
+      "desc": "Two 180g Prime beef patties, cheese, and salad on a toasted bun",
+      "price": "$25.80"
+    }
+  ]
+}

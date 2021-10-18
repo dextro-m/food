@@ -3,32 +3,33 @@
   "content": [
     {
       "name": "Eye Fillet",
-      "desc": "300g Eye fillet",
+      "desc": "Angus 300g Eye fillet",
       "price": "$56.20"
     },
     {
       "name": "Rib Eye",
-      "desc": "350g Ribeye",
+      "desc": "Angus 400g Scotch fillet ",
       "price": "$46.20"
     },
     {
-      "name": "Rib Eye",
-      "desc": "350g Ribeye",
+      "name": "TomaHawk",
+      "desc": "Angus 450g Bone-in Scotch fillet ",
       "price": "$46.20"
     },
     {
-      "name": "Rib Eye",
-      "desc": "350g Ribeye",
+      "name": "Sirloin",
+      "desc": "Angus 350g Sirloin steak",
       "price": "$46.20"
     },
     {
-      "name": "Rib Eye",
-      "desc": "350g Ribeye",
+      "name": "T-Bone",
+      "desc": "Angus 500g T-Bone steak",
       "price": "$46.20"
     },
+
     {
-      "name": "Rib Eye",
-      "desc": "350g Ribeye",
+      "name": "Rump",
+      "desc": "Angus 600g Rump steak",
       "price": "$46.20"
     }
   ]

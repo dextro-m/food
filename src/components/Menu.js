@@ -7,6 +7,17 @@ import LunchMenu from "./MenuLunch"
 import DinnerSteak from "./DinnerSteak"
 import DinnerEntree from "./DinnerEntree"
 import DinnerSides from "./DinnerSides"
+import DinnerStart from "./DinnerStart"
+import DinnerSpecial from "./DinnerSpecial"
+import WineRed from "./WineRed"
+import WineWhite from "./WineWhite"
+import BeerCraft from "./BeerCraft"
+import BeerNormal from "./BeerNormal"
+import DessertSweet from "./DessertSweet"
+import DessertOther from "./DessertOther"
+import KidMeal from "./KidMeal"
+import KidDessert from "./KidDessert"
+import KidDrink from "./KidDrink"
 
 const Menu = () => {
   return (
@@ -18,7 +29,7 @@ const Menu = () => {
           <Tab>Dinner</Tab>
           <Tab>Wine</Tab>
           <Tab>Beer</Tab>
-          <Tab>Desert</Tab>
+          <Tab>Dessert</Tab>
           <Tab>Kids</Tab>
         </TabList>
         <TabPanel>
@@ -27,9 +38,36 @@ const Menu = () => {
         </TabPanel>
         <TabPanel>
           <Wrapper>
-            <DinnerSteak />
+            <DinnerStart />
             <DinnerEntree />
+            <DinnerSteak />
+            <DinnerSpecial />
             <DinnerSides />
+          </Wrapper>
+        </TabPanel>
+        <TabPanel>
+          <Wrapper>
+            <WineRed />
+            <WineWhite />
+          </Wrapper>
+        </TabPanel>
+        <TabPanel>
+          <Wrapper>
+            <BeerNormal />
+            <BeerCraft />
+          </Wrapper>
+        </TabPanel>
+        <TabPanel>
+          <Wrapper>
+            <DessertSweet />
+            <DessertOther />
+          </Wrapper>
+        </TabPanel>
+        <TabPanel>
+          <Wrapper>
+            <KidMeal />
+            <KidDessert />
+            <KidDrink />
           </Wrapper>
         </TabPanel>
       </Tabs>
@@ -53,9 +91,9 @@ const Wrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   grid-gap: 10px;
+
   //color: blue;
   h2 {
-    //font-size: clamp(1.2rem, 2.5vw, 1.5rem);
     //color: blue;
   }
   @media (max-width: 768px) {
